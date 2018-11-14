@@ -6,7 +6,6 @@ const verticalWrapperClass = {
 }
 
 const horizontalWrapperClass = {
-	'height': '100%',
 	'display': 'inline-block',
 	'vertical-align': 'top',
 	'white-space': 'normal'
@@ -19,6 +18,10 @@ const stretcherElementHorizontalClass = {
 const css = {
 	[`.${constants.containerClass}`]: {
 		'position': 'relative',
+		'display':'flex',
+		'flex-direction':'row',
+		'flex-wrap':'wrap',
+		'justify-content':'flex-start',
 	},
 	[`.${constants.containerClass} *`]: {
 		'box-sizing': 'border-box',

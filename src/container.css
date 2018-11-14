@@ -8,6 +8,10 @@
 
 .smooth-dnd-container{
   position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .smooth-dnd-container.vertical{
@@ -18,7 +22,6 @@
 }
 
 .smooth-dnd-container.horizontal .smooth-dnd-draggable-wrapper{
-  height: 100%;
   display: inline-block;
 }
 
